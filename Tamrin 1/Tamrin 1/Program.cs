@@ -1,4 +1,5 @@
-﻿int n = GetinputOutput.GetPostiveNumber();
+//پوریا یوسفی
+int n = GetinputOutput.GetPostiveNumber();
 int m = GetinputOutput.GetPostiveNumber();
 
 for (int i = Math.Min(n, m); i < Math.Max(n , m); i++){
@@ -11,3 +12,4 @@ for (int i = Math.Min(n, m); i < Math.Max(n , m); i++){
 
     Console.WriteLine();
 }
+
