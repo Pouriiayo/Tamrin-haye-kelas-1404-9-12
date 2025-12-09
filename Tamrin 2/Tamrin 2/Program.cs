@@ -1,4 +1,5 @@
-﻿using AbstractPerson;
+//پوریا یوسفی
+using AbstractPerson;
 using CourseObject;
 using StudentCourseObject;
 using StudentObject;
@@ -27,5 +28,6 @@ foreach (var item in s1.CoursesTaken)
 {
     Console.WriteLine($"{item.Course.CourseName} with {item.Teacher.FullName}");
 }
+
 
 Console.WriteLine($"\nAverage: {s1.GetAverage()}");
