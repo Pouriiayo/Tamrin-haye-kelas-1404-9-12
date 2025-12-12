@@ -23,8 +23,10 @@ public class Student : Person
 
         for (int i = 0; i < CoursesTaken.Count; i++) {
             if (CoursesTaken[i].Grade.HasValue) {
-                sum += CoursesTaken[i].Grade.Value;
-                count++;
+
+                sum += CoursesTaken[i].Grade.Value * CoursesTaken[i].Course.Units;
+
+                count += CoursesTaken[i].Course.Units; 
             }
         }
         if (count == 0) return 0;
@@ -36,3 +38,4 @@ public class Student : Person
         return base.ToString() + $" | Student Number: {StudentNumber}";
     }
 }
+
